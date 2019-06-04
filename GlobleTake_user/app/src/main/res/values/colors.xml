@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="diwen">#f3f3f3</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="statecolor">#17A2FF</color>
+    <color name="color333">#333333</color>
+    <color name="color666">#666666</color>
+    <color name="color999">#999999</color>
+    <color name="colorccc">#CCCCCC</color>
+    <color name="color_search">#C2C2C2</color>
+    <color name="fengexian">#E5E5E5</color>
+    <color name="fengexian_search">#DDDDDD</color>
+    <color name="xml_bg">#F9F9F9</color>
+    <color name="press_btnsel">#E0E0E0</color>
+    <color name="addred">#FB4546</color>
+    <color name="moren_tvcolor">#8A000000</color>
+    <color name="daojishi_tvcolor">#FC6363</color>
+    <color name="distanceColor">#FC6363</color>
+    <color name="endOrderBg">#F5F5F5</color>
+    <color name="endOrder_fengexian">#DDDDDD</color>
+    <color name="color224">#E0E0E0</color>
+
+
+</resources>

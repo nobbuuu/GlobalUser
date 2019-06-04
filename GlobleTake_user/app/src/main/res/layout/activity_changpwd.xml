@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/changpwd_rootlay"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/back_relay"
+            android:layout_width="@dimen/backimg_parent_width"
+            android:layout_height="@dimen/backimg_parent_height">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/gerenxinxi_xiangzuo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/backimg_marginleft"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/title_changepwd"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/color333"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/xml_bg"
+        android:layout_height="10dp"></View>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/zhaohuimima_iphone"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/changpwd_phoneedt"
+            android:layout_width="wrap_content"
+            android:hint="@string/hint_inputphone"
+            android:background="@null"
+            android:inputType="phone"
+            android:layout_toRightOf="@+id/img_phone"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/changpwd_yanzm"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_getyzm"
+            android:layout_gravity="end"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:background="@mipmap/wangjimima_buleicon"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/fengexian"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/img_pwdimg"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/zhaohuimima_yanzhengma"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/changpwd_pwdedt"
+            android:layout_width="wrap_content"
+            android:hint="@string/hint_inputyzm"
+            android:background="@null"
+            android:layout_toRightOf="@+id/img_pwdimg"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/fengexian"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/xml_bg"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/tv_setpwd"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/pwd_one"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_setpwd"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/fengexian"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/pwd_again"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_inputagain"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/fengexian"
+        android:layout_height="1dp"></View>
+    <Button
+        android:id="@+id/queren_btn"
+        android:layout_width="match_parent"
+        android:text="@string/btn_sure"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/selector_changpwd_btn"
+        android:layout_height="wrap_content" />
+</LinearLayout>

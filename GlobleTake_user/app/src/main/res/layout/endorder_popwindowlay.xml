@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/shape_white_corner"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/popwindow_closeiv"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/dengdaiyingda_tanchaung_delete"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/taker_headicon"
+            android:layout_width="65dp"
+            android:src="@mipmap/tanchuang_touxiang"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_height="65dp" />
+        <TextView
+            android:id="@+id/taker_startplace"
+            android:text="南山大厦的方式范德萨范德萨范德萨"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/color333"
+            android:layout_toRightOf="@+id/qidian"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="39px"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/taker_endplace"
+            android:text="世界之窗打发第三方第三方第三方"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/zhongdian"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="107px"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:background="@color/endOrder_fengexian"
+                android:layout_gravity="center_vertical"
+                android:layout_height="1dp"></RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/tv_evaluate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:background="@color/endOrder_fengexian"
+                android:layout_gravity="center_vertical"
+                android:layout_height="1dp"></RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/credit_lay"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/pj_iv1"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/wodexingcheng_start"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pj_iv2"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/wodexingcheng_start"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pj_iv3"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/wodexingcheng_start"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pj_iv4"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/wodexingcheng_start"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pj_iv5"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/wodexingcheng_start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/pj_numtv"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/distanceColor"
+                android:textSize="18dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_pjbtn"
+            android:layout_width="match_parent"
+            android:text="@string/tv_submit"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_jifeiritem_bg"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

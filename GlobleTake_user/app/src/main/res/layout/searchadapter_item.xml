@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/address_icon"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/fenleimingcheng_didian"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/search_address"
+            android:layout_width="wrap_content"
+            android:text="到了肯定非常v经常发的鬼地方"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search_address_detail"
+            android:layout_width="wrap_content"
+            android:text="到了肯定非常v经常发的鬼地方"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

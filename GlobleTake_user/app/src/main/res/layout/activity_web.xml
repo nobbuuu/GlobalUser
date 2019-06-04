@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_lay"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_relay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backimg_parent_height"
+        android:background="@color/statecolor">
+        <RelativeLayout
+            android:id="@+id/back_relay"
+            android:layout_width="@dimen/backimg_parent_width"
+            android:layout_height="@dimen/backimg_parent_height">
+            <ImageView
+                android:id="@+id/endorder_backimg"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/sousuo_xiangzuo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titlebar_centertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_helpcenter"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+    </WebView>
+
+</RelativeLayout>

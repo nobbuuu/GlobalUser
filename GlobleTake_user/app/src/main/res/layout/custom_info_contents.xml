@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@mipmap/shouye_tishikuang"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/timeafter_tv"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_minute"
+            android:textColor="@color/statecolor"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/mid_relay"
+            android:layout_width="2dp"
+            android:background="@color/statecolor"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="23dp"></RelativeLayout>
+        <TextView
+            android:id="@+id/takecar_tv"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_heretake"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

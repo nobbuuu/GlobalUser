@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/taker_headicon"
+            android:layout_width="65dp"
+            android:src="@mipmap/tanchuang_touxiang"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_height="65dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/taker_headicon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/taker_phone"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/taker_startplace"
+                    android:text="南山大厦的方式范德萨范德萨范德萨"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color333"
+                    android:layout_toRightOf="@+id/qidian"
+
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/taker_endplace"
+                    android:text="世界之窗打发第三方第三方第三方"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_toRightOf="@+id/zhongdian"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/credit_lay"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/star_lay"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+               <!-- <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/yonghuduanyijiedan_strar"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/yonghuduanyijiedan_strar"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/yonghuduanyijiedan_strar"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/yonghuduanyijiedan_strar"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/yonghuduanyijiedan_halfstrar"
+                    android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/driver_score"
+                    android:layout_width="wrap_content"
+                    android:text="4.5分"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/distanceColor"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/taker_phone"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/yonghuduanyijiedan_iphone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/fengexian_search"
+        android:layout_height="1dp"></RelativeLayout>
+    <TextView
+        android:id="@+id/willcome_time"
+        android:layout_width="wrap_content"
+        android:text="@string/tip_wait"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="13dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

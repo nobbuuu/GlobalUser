@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/taxi_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:apiKey="AIzaSyCIyyj3q-ngW3C4GXXjEndhs-PRN04vy90" />
+        <LinearLayout
+            android:id="@+id/waittime_lay"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:background="@mipmap/shouye_tishikuang"
+            android:layout_above="@+id/center_marker"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/timeafter_tv"
+                android:layout_width="wrap_content"
+                android:text="@string/tv_minute"
+                android:textColor="@color/statecolor"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/mid_relay"
+                android:layout_width="2dp"
+                android:background="@color/statecolor"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_height="23dp"></RelativeLayout>
+            <TextView
+                android:id="@+id/takecar_tv"
+                android:layout_width="wrap_content"
+                android:text="@string/tv_heretake"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nocar_lay"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:background="@mipmap/shouye_tishikuang"
+            android:layout_above="@+id/center_marker"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nocar_tv"
+                android:layout_width="wrap_content"
+                android:text="@string/tv_nocar"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/center_marker"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/shouye_qidian"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/orderreceived_lay"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/waitcar_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEDD7"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/mianbaoche_xiaoxi"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#FD8612"
+                android:text="@string/takecar_tip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:padding="6dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/float_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/top_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_white_corner"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:id="@+id/start_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/start_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/shouye_yuan_bule" />
+
+                    <TextView
+                        android:id="@+id/start_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/start_text"
+                        android:textColor="@color/statecolor"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/qidian_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/tv_mylocation"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/end_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/end_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/shouye_yuan_red" />
+
+                    <TextView
+                        android:id="@+id/end_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/end_text"
+                        android:textColor="@color/addred"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/zhondian_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/tv_wantaddress"
+                        android:textColor="@color/addred"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/price_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/fengexian"></RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/recommend_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="参考价：100元" />
+
+                    <LinearLayout
+                        android:id="@+id/farerule_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/jijiaguize_tishi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="@string/price_tip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sure_callcar_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_lay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_login_btn"
+                android:text="@string/sure_callCars"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

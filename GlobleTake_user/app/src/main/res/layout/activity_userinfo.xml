@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_lay"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_ralay"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/return_img"
+            android:layout_width="@dimen/backimg_parent_width"
+            android:layout_height="@dimen/backimg_parent_height">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/gerenxinxi_xiangzuo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/backimg_marginleft"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/title_userinfo"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/color333"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title_ralay"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/change_headicon_relay"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/head_icon"
+                android:layout_width="55dp"
+                android:src="@mipmap/tanchuang_touxiang"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:layout_height="55dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/tv_xiugaiheadicon"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/head_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/color333"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/tianjiaweizhi_xiangyou"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/fengexian"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="106dp"
+                android:src="@mipmap/tanchuang_touxiang"
+                android:layout_marginLeft="25dp"
+                android:text="@string/tv_username"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:text="水无伤"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_toRightOf="@+id/name_tv"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/fengexian"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:id="@+id/sex_relay"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/sex_tv"
+                android:layout_width="106dp"
+                android:src="@mipmap/tanchuang_touxiang"
+                android:layout_marginLeft="25dp"
+                android:text="@string/tv_sex"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sex_name"
+                android:layout_width="wrap_content"
+                android:text="女"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_toRightOf="@+id/sex_tv"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/tianjiaweizhi_xiangyou"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/fengexian"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:id="@+id/change_phonerelay"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/phone_tv"
+                android:layout_width="106dp"
+                android:src="@mipmap/tanchuang_touxiang"
+                android:layout_marginLeft="25dp"
+                android:text="@string/title_changephone"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/phone_num"
+                android:layout_width="wrap_content"
+                android:text="18277750576"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_toRightOf="@+id/phone_tv"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/tianjiaweizhi_xiangyou"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+       <!-- <View
+            android:layout_width="match_parent"
+            android:background="@color/fengexian"
+            android:layout_height="1dp"></View>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/car_tv"
+                android:layout_width="106dp"
+                android:src="@mipmap/tanchuang_touxiang"
+                android:layout_marginLeft="25dp"
+                android:text="车牌号"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/user_carnum"
+                android:layout_width="wrap_content"
+                android:text="粤B168168"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_toRightOf="@+id/car_tv"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/fengexian"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="106dp"
+                android:src="@mipmap/tanchuang_touxiang"
+                android:layout_marginLeft="26dp"
+                android:text="@string/tv_email"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:text="1184824553@qq.com"
+                android:textSize="16sp"
+                android:textColor="@color/color333"
+                android:layout_toRightOf="@+id/email_tv"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/fengexian"
+            android:layout_height="1dp"></View>
+    </LinearLayout>
+
+    
+    <Button
+        android:id="@+id/exitlogin_btn"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_exitlogin_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="bottom"
+        android:text="@string/btn_exitlogin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

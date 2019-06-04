@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/startv"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_startplace"
+            android:textColor="@color/statecolor"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/startplace_tv"
+            android:layout_width="wrap_content"
+            android:text="第三方撒开理发店水库"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/startv"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/day_tv"
+            android:layout_width="wrap_content"
+            android:text="DAILY"
+            android:textColor="@color/statecolor"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/tv_endplace"
+            android:textColor="@color/distanceColor"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/endplace_tv"
+            android:layout_width="wrap_content"
+            android:text="第三方撒开理发店水库"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="6dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mianbao_tv"
+        android:layout_width="match_parent"
+        android:numColumns="5"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="13dp"
+        android:text="士大夫撒地方"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:id="@+id/tip_tv"
+        android:layout_width="wrap_content"
+        android:text="A/C BUS TOILET direct"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_lay"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_ralay"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/return_img"
+            android:layout_width="@dimen/backimg_parent_width"
+            android:layout_height="@dimen/backimg_parent_height">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/gerenxinxi_xiangzuo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/backimg_marginleft"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="选择国家"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/color333"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <cn.smssdk.gui.CountryListView
+        android:id="@+id/country_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </cn.smssdk.gui.CountryListView>
+</LinearLayout>

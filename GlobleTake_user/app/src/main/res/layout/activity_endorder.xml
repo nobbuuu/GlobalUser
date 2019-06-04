@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_lay"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backimg_parent_height"
+        android:background="@color/statecolor">
+
+        <RelativeLayout
+            android:id="@+id/endorder_backrelay"
+            android:layout_width="@dimen/backimg_parent_width"
+            android:layout_height="@dimen/backimg_parent_height">
+            <ImageView
+                android:id="@+id/endorder_backimg"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/sousuo_xiangzuo"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/titlebar_centertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="结束订单"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/titlebar_shouche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/more_text"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/endOrderBg"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/endorder_toprelay"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@color/endOrderBg"
+                android:visibility="gone"
+                android:layout_height="90dp">
+                <ImageView
+                    android:id="@+id/taker_headicon"
+                    android:layout_width="65dp"
+                    android:src="@mipmap/tanchuang_touxiang"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="65dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/taker_headicon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/taker_phone"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/taker_startplace"
+                            android:text="南山大厦的方式范德萨范德萨范德萨"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textColor="@color/color333"
+                            android:layout_toRightOf="@+id/qidian"
+
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/taker_endplace"
+                            android:text="世界之窗打发第三方第三方第三方"
+                            android:layout_width="wrap_content"
+                            android:textSize="16sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_toRightOf="@+id/zhongdian"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/credit_lay"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/star_lay"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                           <!-- <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@mipmap/yonghuduanyijiedan_strar"
+                                android:layout_height="wrap_content" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@mipmap/yonghuduanyijiedan_strar"
+                                android:layout_height="wrap_content" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@mipmap/yonghuduanyijiedan_strar"
+                                android:layout_height="wrap_content" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@mipmap/yonghuduanyijiedan_strar"
+                                android:layout_height="wrap_content" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@mipmap/yonghuduanyijiedan_halfstrar"
+                                android:layout_height="wrap_content" />-->
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/credit_numtv"
+                            android:layout_width="wrap_content"
+                            android:text="4.5分"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/distanceColor"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/taker_phone"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/yonghuduanyijiedan_iphone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mytrip_toplay"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/taker_headicon2"
+                    android:layout_width="65dp"
+                    android:src="@mipmap/tanchuang_touxiang"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="65dp" />
+                <TextView
+                    android:id="@+id/taker_startplace2"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/color333"
+                    android:layout_toRightOf="@+id/qidian"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/credit_lay2"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/star_lay2"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <!-- <ImageView
+                             android:layout_width="wrap_content"
+                             android:src="@mipmap/yonghuduanyijiedan_strar"
+                             android:layout_height="wrap_content" />
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:src="@mipmap/yonghuduanyijiedan_strar"
+                             android:layout_height="wrap_content" />
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:src="@mipmap/yonghuduanyijiedan_strar"
+                             android:layout_height="wrap_content" />
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:src="@mipmap/yonghuduanyijiedan_strar"
+                             android:layout_height="wrap_content" />
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:src="@mipmap/yonghuduanyijiedan_halfstrar"
+                             android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/credit_numtv2"
+                        android:layout_width="wrap_content"
+                        android:text="4.5分"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/distanceColor"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/pjstatus_lay"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:background="@color/endOrder_fengexian"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="1dp"></RelativeLayout>
+                    <TextView
+                        android:id="@+id/ispj_tv"
+                        android:layout_width="wrap_content"
+                        android:text="@string/tv_nopj"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:background="@color/endOrder_fengexian"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="1dp"></RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gopj_tv"
+                android:layout_width="wrap_content"
+                android:text="@string/tv_gopj"
+                android:textColor="@color/distanceColor"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:background="@drawable/selector_gopj_btn"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:background="@color/endOrder_fengexian"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="1dp"></RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/tv_carmoney"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:background="@color/endOrder_fengexian"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="1dp"></RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/order_money"
+                    android:layout_width="wrap_content"
+                    android:textSize="50sp"
+                    android:textColor="@color/color333"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="R"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/order_money"
+                    android:layout_alignBottom="@+id/order_money"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/licheng_lay"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mileage_onetv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color333"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/mileage_moneyone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/time_lay"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mileage_twotv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color333"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/mileage_moneytwo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/farerule_lay"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/jijiaguize_tishi"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/endorder_billingrule"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tv_jiajiarule"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/endorder_tip"
+                android:layout_width="wrap_content"
+                android:text="@string/tip_moneyerro"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="12.5sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/next_ordertv"
+                android:layout_width="match_parent"
+                android:text="@string/btn_nextorder"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@drawable/shape_jifeiritem_bg"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
